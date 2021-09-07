@@ -1,0 +1,260 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "4c11e4f3-cbdd-40f9-a024-2d2c723a514c",
+        "name": "umnai"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"make\": \"RENAULT\",\n\"model\": \"TIIDA\",\n\"year\": 2018,\n\"seatCapacity\": 5,\n\"roofRackAvailable\": false,\n\"haulCapacity\": 0,\n\"sideCarAvailable\": true,\n\"type\": \"CAR\",\n\"vin\": \"1122233\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:9090",
+              "path": "/vehicles/"
+            },
+            "id": "cb0d6418-01d2-430f-9926-99de2f0e9d1f",
+            "name": "create vehicle",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.5",
+              "name": "DELETE"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"make\": \"RENAULT\",\n\"model\": \"TIIDA\",\n\"year\": 2018,\n\"seatCapacity\": 5,\n\"roofRackAvailable\": false,\n\"haulCapacity\": 0,\n\"sideCarAvailable\": true,\n\"type\": \"CAR\",\n\"vin\": \"1122233\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:9090",
+              "path": "/v1/vehicles/11AA23B"
+            },
+            "id": "f0f30e01-d692-4321-bf30-09d8b49f804a",
+            "name": "delete vehicle",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"make\": \"RENAULT\",\n\"model\": \"TIIDA\",\n\"year\": 2018,\n\"seatCapacity\": 5,\n\"roofRackAvailable\": false,\n\"haulCapacity\": 0,\n\"sideCarAvailable\": true,\n\"type\": \"CAR\",\n\"vin\": \"1122233\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:9090",
+              "path": "/v1/vehicles/11AA23G"
+            },
+            "id": "197ca029-91ce-46ec-bcde-90111a64b1cb",
+            "name": "get single vehicle",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.4",
+              "name": "PUT"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n  \n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": [
+                  {
+                    "enabled": true,
+                    "name": "vinToReplaceBy",
+                    "value": "11AA23G"
+                  },
+                  {
+                    "enabled": true,
+                    "name": "vinToReplace",
+                    "value": "11AA23F"
+                  }
+                ]
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:9090",
+              "path": "/v1/vehicles"
+            },
+            "id": "2dd474ca-588e-4c08-9737-eba0cc0486c8",
+            "name": "replace vehicle",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"make\": \"RENAULT\",\n\"model\": \"TIIDA\",\n\"year\": 2018,\n\"seatCapacity\": 5,\n\"roofRackAvailable\": false,\n\"haulCapacity\": 0,\n\"sideCarAvailable\": true,\n\"type\": \"CAR\",\n\"vin\": \"1122233\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": [
+                  {
+                    "enabled": true,
+                    "name": "page",
+                    "value": "0"
+                  },
+                  {
+                    "enabled": true,
+                    "name": "size",
+                    "value": "4"
+                  },
+                  {
+                    "enabled": true,
+                    "name": "make",
+                    "value": "NISSAN"
+                  }
+                ]
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:9090",
+              "path": "/v1/vehicles"
+            },
+            "id": "9d6fe85c-16e4-432b-b547-df904775b1a8",
+            "name": "search vehicles",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.4",
+              "name": "PUT"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"make\": \"BMW\",\n\"type\": \"CAR\",\n\"vin\": \"1122233\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:9090",
+              "path": "/v1/vehicles/11AA238"
+            },
+            "id": "1ac812da-c575-41e2-b242-62b55b17b566",
+            "name": "update vehicle",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
