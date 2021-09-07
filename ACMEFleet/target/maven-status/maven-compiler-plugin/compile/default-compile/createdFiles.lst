@@ -1,8 +1,0 @@
-com\vehicle\ACMEApplication$GreetingController.class
-com\vehicle\IConstants.class
-com\vehicle\LoadDatabase.class
-com\vehicle\ACMEApplication.class
-com\vehicle\Vehicle.class
-com\vehicle\VehicleController.class
-com\vehicle\VehicleRepository.class
-com\vehicle\exceptions\VehicleNotFoundException.class

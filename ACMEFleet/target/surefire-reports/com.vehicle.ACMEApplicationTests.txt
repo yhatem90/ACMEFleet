@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.vehicle.ACMEApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.589 s <<< FAILURE! - in com.vehicle.ACMEApplicationTests
-whenValidInput_thenReturns200  Time elapsed: 0.236 s  <<< FAILURE!
-java.lang.AssertionError: Status expected:<200> but was:<404>
-	at com.vehicle.ACMEApplicationTests.whenValidInput_thenReturns200(ACMEApplicationTests.java:54)
-
